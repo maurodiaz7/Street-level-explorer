@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Google Maps</title>
+  <style>
+  .row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+  }
+  .header {
+    width: 100%;
+    height: 15%;
+    background-color: lightblue;
+    text-align: center;
+  }
+  .column {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: DodgerBlue;
+    flex-direction: column;
+  }
+  .flex-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 950px;
+  }
+  .cell{
+    height: 100%;
+    width: 100%;
+  }
+  .imagen{
+    height: 150px;
+    width: 100%;
+  }
+  #infoi {
+    width: 100%;
+    height: 100%;
+    background-color: #c5fce7;
+  }
+
+  </style>
+  </head>
+  <body style="height: 100%;width: 99%; background-color: yellow;">
+    <script type="module" src='app.js'></script>
+
+    <div class="row">
+      <div class="flex-container" style="width:100%">
+        <div id="map" class="cell" style="background-color:blue;">
+        </div>
+      </div>
+
+      <div class="flex-container" style="width:80%">
+        <div class="header">
+            <!--<p >Image controls</p>-->
+            <br>
+            <input type="radio" id="original_img" name="image_opt" value="original" checked>
+            <label for="original">original</label>
+            <input type="radio" id="segment_img" name="image_opt" value="segment" >
+            <label for="segment">segment</label>
+          
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="static/hola.jpg" class="imagen" style="opacity:0;">
+            <img id="img_left" src="static/hola.jpg" class="imagen">
+            <img src="static/hola.jpg" class="imagen" style="opacity:0;">
+          </div>
+          <div class="column">
+            <img id="img_top" src="static/hola.jpg" class="imagen">
+            <img src="static/hola.jpg" class="imagen" style="opacity:0;">
+            <img id="img_bot" src="static/hola.jpg" class="imagen">
+          </div>
+          <div class="column">
+            <img src="static/hola.jpg" class="imagen" style="opacity:0;">
+            <img id="img_right" src="static/hola.jpg" class="imagen">
+            <img src="static/hola.jpg" class="imagen" style="opacity:0;">
+          </div>
+        </div>
+        <div class="header">
+            <p>Histogram of Class</p>
+        </div>
+        <div class="row">
+          <div class="cell" style="background-color:green;">2</div>  
+        </div>
+      </div>
+      </div>    
+  </body>
+</html>

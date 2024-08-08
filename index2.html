@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title>City Map</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="jquery.csv.js"></script>
+    <script src="https://unpkg.com/deck.gl@^8.0.0/dist.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="height: 100%;width: 99%; background-color: #00008B"> <!--azul-->
+    <div class="row">
+      <div class="flex-container" style="width:100%">
+        <div id="map" class="cell" style="background-color: #dddddd">
+        </div>
+      </div>
+
+      <div class="flex-container" style="width:80%">
+        <div class="header">
+            <!--<p >Image controls</p>-->
+            <br>
+            <input type="radio" id="original_img" name="image_opt" value="original" checked>
+            <label for="original">Coordinate view</label>
+            <input type="radio" id="segment_img" name="image_opt" value="segment" >
+            <label for="segment">Segmented view</label>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="static/hola.jpg" class="imagen" style="opacity:0;">
+            <img id="img_left" src="static/hola.jpg" class="imagen">
+            <img src="static/hola.jpg" class="imagen" style="opacity:0;">
+          </div>
+          <div class="column">
+            <img id="img_top" src="static/hola.jpg" class="imagen">
+            <img src="static/cross1.png" class="imagen" style="opacity:1;">
+            <img id="img_bot" src="static/hola.jpg" class="imagen">
+          </div>
+          <div class="column">
+            <img src="static/hola.jpg" class="imagen" style="opacity:0;">
+            <img id="img_right" src="static/hola.jpg" class="imagen">
+            <img src="static/hola.jpg" class="imagen" style="opacity:0;">
+          </div>
+        </div>
+        <div class="header">
+            <p>CrimeGPT</p>
+        </div>
+        <div class="row">
+          <div class="cell" style="background-color:#dddddd;"></div>
+        </div>
+      </div>
+      </div>
+   <script src="app2.js">
+   </script> 
+  </body>
+</html>
