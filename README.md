@@ -8,11 +8,13 @@
 2. **Step 3**: Access http://0.0.0.0:8000/index2.html on your preferred browser.
 
 ### Prototype
-![Original CriPAV](images/cripav.png)
+![Original CriPAV](images/prototype.png)
 
 ### Project Demonstration Video
- - [Watch on Google Drive](https://drive.google.com/file/d/1TcZFP87l-OA3MovFuPiR2rOsy23tNCKx/view?usp=sharing)
+ - [Watch on Google Drive](https://drive.google.com/file/d/18vTgMZ1opPqp_MHrucx4PStgC5Odhg86/view)
 
 ### Next steps
-Employ LLMs to further analyze crime-patterns and trajectory recommendations for pedestrians.
+- Add support for multiple time resolutions. Thus far, data for the whole year is visualized.
+- Allow the visualization of multiple time frames to visualize the changing nature of crime data. 
+- Integrate LLMs in the third component in our tool. Take advantage of LLMs further analyze crime-patterns and also produce trajectory recommendations for pedestrians.
 
